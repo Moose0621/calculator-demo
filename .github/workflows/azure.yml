@@ -10,7 +10,7 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
 on:
   release:
-    types: [*]
+    types: [published, created, edited]
 
 env:
   AZURE_WEBAPP_NAME: c2c-demo    # set this to your application's name
